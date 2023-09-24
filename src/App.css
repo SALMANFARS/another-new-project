@@ -1,0 +1,79 @@
+.conteiner{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.top{
+        background-image: url(/src/assets/bag.svg);
+        background-repeat: no-repeat;
+      
+        
+}
+.section3{
+  background-image: url(/src/assets/kvadrat.svg);
+  background-repeat: no-repeat;
+}
+
+
+.block2{
+  background-image: url(/src/assets/img1.png);
+  background-size: 100% 100%;
+  width: 100%;
+}
+
+
+.section2And2{
+    
+  background-image: url(/src/assets/imgGemaroy.png);
+   background-repeat: no-repeat;
+  background-position: 0, 30px;
+
+}
+
+.section4{
+  background-image: url(/src/assets/strelkabottom.png);
+   background-repeat: no-repeat ;
+   background-position: top right 200px  ;
+   
+   
+   
+   
+}
+.imgAhsap{
+  background: 'radial-gradient(100.00% 43.89% at -Infinity% 21.95%, #E24413 0%, rgba(255, 255, 255, 0) 100%)'
+}
+
+.left4{
+  border-left: 1px solid rgb(248, 248, 248);
+  border-right: 1px solid rgb(248, 248, 248);
+}
+.right4{
+   border-right: 1px solid rgb(248, 248, 248);
+}
+
+.under1{
+  border-top:1px solid rgb(248, 248, 248) ;
+}
+
+.under2{
+  border-top:1px solid rgb(248, 248, 248) ;
+}
+
+.underArrow{
+  border-top:1px solid rgb(248, 248, 248) ;
+}
+
+.block6{
+  background-color: liner-gradient(180deg, #FAFAFA 0%, white 100%);
+}
+
+
+.section6{
+  background-image: url(/src/assets/arrowLeft.png);
+  background-repeat: no-repeat ;
+  background-position: right;
+  background-size: 10%;
+}
+.blockCha10{
+ border-right: 1px solid rgba(115, 114, 114, 0.086);
+}
