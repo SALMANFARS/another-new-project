@@ -46,24 +46,28 @@ function App() {
               <img src={logo} alt="" />
             </div>
             <div className="itemsLang flex gap-5">
-              <ul className="flex justify-center gap-5 text-white ">
+              <ul className="sm:hidden xl:flex justify-center gap-5 sm:text-[#E24413] xl:text-white  ">
                 <li>Kurumsal</li>
                 <li>Aktiviteler</li>
                 <li>Projeler</li>
                 <li>Haberler</li>
                 <li>İnsan Kaynakları</li>
-                <li>İletişim</li>
+                <li className="xl:border-r-[1px] xl:border-gray-50 pr-[15px] ">İletişim</li>
               </ul>
-              <div className="lang text-white flex gap-2">
-                <img src={global} alt="" />
-                <select name="" id="" className="bg-[#E24413] text-white">
+              <div className="lang sm:w-[100px] text-white flex gap-2">
+                <img src={global} alt="" className="sm:hidden md:flex" />
+                <select
+                  name=""
+                  id=""
+                  className="sm:h-[25px]  sm:mt-[50px] md:mt-[0]  bg-[#E24413] text-white"
+                >
                   <option value="TR">TR</option>
                 </select>
               </div>
             </div>
           </div>
-          <div className="block2">
-            <div className="arrowsTextBnt pl-[100px] pt-[150px] pb-[250px]">
+          <div className="block2 sm:h-[350px] md:h-[100%]">
+            <div className="arrowsTextBnt pl-[100px] sm:pt-[20px] md:pt-[150px] pb-[250px]">
               <div className="arrows flex gap-5">
                 <div className="arrowRight    ">
                   <WestIcon
@@ -81,7 +85,7 @@ function App() {
                   />
                 </div>
               </div>
-              <div className="txts text-[40px]">
+              <div className="txts sm:text-[20px] md:text-[40px]">
                 <h1>
                   Geleceğin <br />
                   İnşaası,
@@ -90,14 +94,14 @@ function App() {
                   </span>
                 </h1>
 
-                <p className="text-[18px] py-[20px]">
+                <p className="sm:text-[14px] md:text-[18px] py-[20px]">
                   Sürdürülebilirlik ilkesini benimseyerek, çevre dostu <br />
                   inşaat adımlarıyla geleceği inşa ediyoruz.
                 </p>
               </div>
               <div className="btn py-[10px]">
-                <button className=" flex gap text-white py-[10px] px-[30px] bg-[#E24413]">
-                  <p>Projelerimiz</p>
+                <button className=" flex items-center text-white sm:py-[5px] sm:px-[5px] md:py-[10px] md:px-[30px] bg-[#E24413]">
+                  <p className="sm:text-xs md:text-[15px]">Projelerimiz</p>
                   <div className="strelka">
                     <KeyboardArrowRightIcon />
                   </div>
@@ -112,7 +116,7 @@ function App() {
         </div>
       </div>
 
-      <div className="sectons2">
+      <div className="sectons2 hidden">
         <div className="section2 pt-[80px]">
           <div className="conteiner">
             <div className="block2in1">
@@ -186,7 +190,7 @@ function App() {
         </div>
       </div>
 
-      <div className="section3 pt-[50px] bg-[#1E1E1E]">
+      <div className="section3 hidden pt-[50px] bg-[#1E1E1E]">
         <div className="conteinerAnother">
           <div className="block3 grid grid-cols-2 gap-10">
             <div className="left ml-[50px] mt-[100px]">
@@ -265,7 +269,7 @@ function App() {
         </div>
       </div>
 
-      <div className="section4">
+      <div className="section4 hidden">
         <div className="conteiner">
           <div className="block4 flex justify-center gap-[10px] ">
             <div className="LeftRight grid grid-cols-2 ">
@@ -334,7 +338,7 @@ function App() {
         </div>
       </div>
 
-      <div className="section5">
+      <div className="section5 hidden">
         <div className="conteiner">
           <div className="block6 flex justify-around">
             <div className="left">
@@ -408,7 +412,7 @@ function App() {
         </div>
       </div>
 
-      <div className="section6 bg-[#1E1E1E]">
+      <div className="section6 hidden bg-[#1E1E1E]">
         <div className="block7 flex justify-around py-[40px]">
           <div className="isoTexts flex gap-10">
             <div className="isoText py-[20px] px-[20px] border-[1px] border-[#ffffff48] hover:bg-[#E24413]">
@@ -451,7 +455,7 @@ function App() {
         </div>
       </div>
 
-      <div className="footer  bg-[#1B1B1B] py-[50px]">
+      <div className="footer hidden  bg-[#1B1B1B] py-[50px]">
         <div className="blocks flex justify-center gap-10  ">
           <div className="blockCha1">
             <ul className="text-white ">
@@ -694,7 +698,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="theAnd2 bg-[#1E1E1E] py-[10px] flex justify-around items-center text-[#1E1E1E]">
+      <div className="theAnd2 hidden bg-[#1E1E1E] py-[10px] flex justify-around items-center text-[#1E1E1E]">
         <div className="porag1">
           <p className="text-white text-[17px]">
             © 2023 Kinzayapi.com | Tüm Hakları Saklıdır.
