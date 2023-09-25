@@ -9,10 +9,7 @@
       
         
 }
-.section3{
-  background-image: url(/src/assets/kvadrat.svg);
-  background-repeat: no-repeat;
-}
+
 
 
 .block2{
@@ -20,6 +17,18 @@
   background-size: 100% 100%;
   width: 100%;
 }
+
+@media screen  and (min-width: 1217px) {
+  .section3{
+  background-image: url(/src/assets/kvadrat.svg);
+  background-repeat: no-repeat;
+  
+}
+}
+
+
+
+
 
 
 .section2And2{
@@ -76,4 +85,10 @@
 }
 .blockCha10{
  border-right: 1px solid rgba(115, 114, 114, 0.086);
+}
+
+
+.swiper {
+  width: 600px;
+  height: 300px;
 }

@@ -21,13 +21,14 @@ import browser from "./assets/browser.png";
 import img88 from "./assets/img8.png"
 import img9 from "./assets/img9.png";
 import img10 from "./assets/img10.png";
-
+import img8um from "./assets/img8um.png"
 import iso from "./assets/ISO.svg";
 
 import { BiLogoFacebook } from 'react-icons/bi'
 import { BsYoutube } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa6"
-import {BiLogoTwitter} from "react-icons/bi"
+import { BiLogoTwitter } from "react-icons/bi"
+import MenuIcon from "@mui/icons-material/Menu";
 
 import phone from "./assets/phone.svg";
 import mail from "./assets/mail.svg";
@@ -36,26 +37,36 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { orange } from "@mui/material/colors";
 import penta from "./assets/penta.png";
 
+import Swiper from "swiper/bundle";
+import "swiper/css/bundle";
+
 function App() {
   return (
     <div className="top border-[#E24413] border-[5px]">
-      <div className="section1">
+      <div className="section1 hidden">
         <div className="conteiner">
           <div className="block1 flex items-center justify-around py-[]">
             <div className="logo py-[10px]">
               <img src={logo} alt="" />
             </div>
-            <div className="itemsLang flex gap-5">
+            <div className="itemsLang sm:block md:flex gap-5 py-[10px] items-center">
+              <div className="burger xl:hidden ">
+                <MenuIcon className="sm:text-[#E24413]  md:text-white" />
+              </div>
               <ul className="sm:hidden xl:flex justify-center gap-5 sm:text-[#E24413] xl:text-white  ">
                 <li>Kurumsal</li>
                 <li>Aktiviteler</li>
                 <li>Projeler</li>
                 <li>Haberler</li>
                 <li>İnsan Kaynakları</li>
-                <li className="xl:border-r-[1px] xl:border-gray-50 pr-[15px] ">İletişim</li>
+                <li className="xl:border-r-[1px] xl:border-gray-50 pr-[15px] ">
+                  İletişim
+                </li>
               </ul>
+
               <div className="lang sm:w-[100px] text-white flex gap-2">
                 <img src={global} alt="" className="sm:hidden md:flex" />
+
                 <select
                   name=""
                   id=""
@@ -116,33 +127,33 @@ function App() {
         </div>
       </div>
 
-      <div className="sectons2 hidden">
-        <div className="section2 pt-[80px]">
+      <div className="sectons2 hidden ">
+        <div className="sec2 sm:pt-[20px] lg:pt-[80px]">
           <div className="conteiner">
             <div className="block2in1">
-              <div className="blockCha1 flex gap-10 ">
-                <div className="img w-[50%] ">
+              <div className="blockCha1 sm:grid sm:grid-cols-1 lg:flex gap-10 ">
+                <div className="img sm:w-[80%] sm:m-auto lg:w-[50%] lg:m-0  ">
                   <img src={img4} alt="" />
                 </div>
 
                 <div className="txt">
-                  <p className="bg-white relative z-[1] right-[180px] text-[40px] text-[#E24413] px-[50px] py-[10px]">
-                    Geçmişten Geleceğe İnşa Gücü: <br />
+                  <p className="bg-white flex sm:justify-center lg:justify-normal lg:relative z-[1] right-[180px] sm:text-[28px] md:text-[40px] text-[#E24413] px-[50px] py-[10px]">
+                    Geçmişten Geleceğe İnşa Gücü:
                   </p>
-                  <div className="txts ml-[80px]">
-                    <p className="flex text-[38px]  font-bold text-[#E24413]">
+                  <div className="txts sm:text-center md:text-left  md:ml-[80px]">
+                    <p className="flex sm:justify-center lg:justify-normal  sm:text-[36px] md:text-[38px]  font-bold text-[#E24413]">
                       1996'dan Beri KİNZA
                     </p>
 
-                    <p className="flex  py-[10px] text-[#333333]">
-                      1996 yılında İstanbul/Türkiye'de kurulan KINZA YAPI,{" "}
+                    <p className="flex sm:justify-center lg:justify-normal  py-[10px] text-[#333333]">
+                      1996 yılında İstanbul/Türkiye'de kurulan KINZA YAPI
                       <br />
-                      uluslararası inşaat sektöründe kısa sürede saygın bir yer{" "}
+                      uluslararası inşaat sektöründe kısa sürede saygın bir yer
                       <br />
                       edinmiştir.
                     </p>
 
-                    <p className="flex  py-[10px] text-[#333333]">
+                    <p className="flex sm:justify-center lg:justify-normal  py-[10px] text-[#333333]">
                       Geçmişten bugüne uzanan köklü deneyimi ve gelecek odaklı{" "}
                       <br />
                       yaklaşımıyla, müşterilerimize en yüksek kalitede hizmet
@@ -150,7 +161,7 @@ function App() {
                       şirketiyiz.
                     </p>
 
-                    <button className="my-[20px] flex py-[10px] px-[30px] text-[#E24413] border-[#E24413] border-[1px]">
+                    <button className="my-[20px] flex sm:ml-[35%] lg:ml-[0] py-[10px] px-[30px] text-[#E24413] border-[#E24413] border-[1px]">
                       Bizi Tanıyın
                       <div className="strelka">
                         <KeyboardArrowRightIcon sx={{ color: orange[900] }} />
@@ -164,101 +175,117 @@ function App() {
         </div>
         <div className="section2And2">
           <div className="conteiner">
-            <div className="block3 grid grid-cols-2 items-center ">
+            <div className="block3 sm:grid sm:grid-cols-1 lg:grid-cols-2 items-center ">
               <div className="counters grid grid-cols-1 justify-items-center">
                 <div className="counter1 py-[20px] border-gray-50 border-[1px] px-[36px]">
-                  <p className="text-[60px] text-[#E24413]">+23</p>
+                  <p className="sm:text-[40px] lg:text-[60px] text-[#E24413]">
+                    +23
+                  </p>
                   <p className="text-gray-400">Yılların Tecrübesi</p>
                 </div>
 
                 <div className="counter1 py-[20px] border-gray-50 border-[1px] px-[32px]">
-                  <p className="text-[50px] text-[#E24413]">3 Kıta</p>
+                  <p className="sm:text-[40px] lg:text-[50px] text-[#E24413]">
+                    3 Kıta
+                  </p>
                   <p className="text-gray-400">15 Ülke</p>
                 </div>
 
                 <div className="counter1 pt-[20px] pb-[60px] border-gray-50 border-[1px] px-[25px]">
-                  <p className="text-[60px] text-[#E24413]">%80</p>
+                  <p className="sm:text-[40px] text-[60px] text-[#E24413]">
+                    %80
+                  </p>
                   <p className="text-gray-400">Uluslararası Projeler</p>
                 </div>
               </div>
 
               <div className="img  ">
-                <img src={img3} alt="" />
+                <img
+                  src={img3}
+                  alt=""
+                  className="sm:w-[80%] m-auto lg:w-[100%] lg:m-[0]"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="section3 hidden pt-[50px] bg-[#1E1E1E]">
+      <div className="section3 pt-[50px] bg-[#1E1E1E]">
         <div className="conteinerAnother">
-          <div className="block3 grid grid-cols-2 gap-10">
+          <div className="block3 sm:grid sm:grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="left ml-[50px] mt-[100px]">
               <div className="img ">
-                <img src={img5} alt="" />
+                <img src={img5} alt="" className="sm:hidden lg:flex" />
               </div>
             </div>
-            <div className="right mt-[80px]">
-              <p className="text-[#E24413] text-[36px] font-light pt-[20px]">
-                KİNZA Yapı
-                <b className="text-[#de9d89] font-medium"> Projeleri</b>
-              </p>
-              <div className="arrows flex gap-5 py-[5px]">
-                <div className="arrowRight    ">
-                  <WestIcon
-                    className="hover:text-[#E24413]"
-                    fontSize="large"
-                    sx={{ color: "white" }}
-                  />
+            <div className="right sm:mt-[40px] lg:mt-[80px]">
+              {/* <div className="img">
+                <img src={img5} alt="" className="sm:hidden lg:flex" />
+              </div> */}
+              <div className="TxtArrBtn">
+                <div className="fText text-[#E24413] sm:text-[24px] lg:text-[36px] font-light pt-[20px]">
+                  <p>
+                    KİNZA Yapı
+                    <b className="text-[#de9d89] font-medium"> Projeleri</b>
+                  </p>
                 </div>
+                <div className="arrows flex gap-5 py-[5px]">
+                  <div className="arrowRight    ">
+                    <WestIcon
+                      className="hover:text-[#E24413]"
+                      fontSize="large"
+                      sx={{ color: "white" }}
+                    />
+                  </div>
 
-                <div className="arrowsLeft ">
-                  <EastIcon
-                    fontSize="large"
-                    color="disabled"
-                    className="hover:text-[#E24413]"
-                    sx={{ color: "white" }}
-                  />
+                  <div className="arrowsLeft ">
+                    <EastIcon
+                      fontSize="large"
+                      color="disabled"
+                      className="hover:text-[#E24413]"
+                      sx={{ color: "white" }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="texts">
-                <p className="text-white text-[30px] font-light py-[5px]">
-                  Radisson Blu Hotel, <br />
-                  <b>Havaalanı Abidjan</b>
-                </p>
+                <div className="texts">
+                  <p className="text-white text-[30px] font-light py-[5px]">
+                    Radisson Blu Hotel, <br />
+                    <b>Havaalanı Abidjan</b>
+                  </p>
 
-                <p className="text-[14px] py-[5px] text-[white] font-light">
-                  Bu proje Abidjan, Fildişi Sahili'nde yer almaktadır. 261 oda
-                  ve Genel <br /> Alanlar dahil olmak üzere 31.000 m2'lik
-                  binanın beton ve MEP işleri hariç <br /> tüm ticari işleri.
-                </p>
-              </div>
+                  <p className="text-[14px] py-[5px] text-[white] font-light">
+                    Bu proje Abidjan, Fildişi Sahili'nde yer almaktadır. 261 oda
+                    ve Genel <br /> Alanlar dahil olmak üzere 31.000 m2'lik
+                    binanın beton ve MEP işleri hariç <br /> tüm ticari işleri.
+                  </p>
+                </div>
+                <div className="btn flex gap-5">
+                  <button className="my-[20px] flex py-[10px] px-[50px] text-white bg-[#E24413]">
+                    <p>İncele </p>
+                    <div className="strelka">
+                      <KeyboardArrowRightIcon sx={{ color: "white" }} />
+                    </div>
+                  </button>
 
-              <div className="btn flex gap-5">
-                <button className="my-[20px] flex py-[10px] px-[50px] text-white bg-[#E24413]">
-                  <p>İncele </p>
-                  <div className="strelka">
-                    <KeyboardArrowRightIcon sx={{ color: "white" }} />
-                  </div>
-                </button>
-
-                <button className="my-[20px] flex py-[10px] px-[30px] text-white border-[white] border-[1px]">
-                  <p>Tüm Projeler</p>
-                  <div className="strelka">
-                    <KeyboardArrowRightIcon sx={{ color: "white" }} />
-                  </div>
-                </button>
+                  <button className="my-[20px] flex py-[10px] px-[30px] text-white border-[white] border-[1px]">
+                    <p>Tüm Projeler</p>
+                    <div className="strelka">
+                      <KeyboardArrowRightIcon sx={{ color: "white" }} />
+                    </div>
+                  </button>
+                </div>
               </div>
 
               <div className="sliders flex gap-10  pt-[20px]">
                 <div className="img ">
                   <img src={img7} alt="" className="" />
-                  <p className="bg-[#1E1E1E] text-white relative z-[1] bottom-10 mr-[180px] py-[10px]">
+                  <p className="bg-[#1E1E1E] text-[14px]  text-white relative z-[1] bottom-10 mr-[180px] py-[10px]">
                     Marriott Hotel Kapadokya Nevşehir
                   </p>
                 </div>
                 <div className="img">
-                  <img src={img8} alt="" className="" />
+                  <img src={img8um} alt="" className="" />
                   <p className=" text-[14px] bg-[#1E1E1E] text-[white] py-[10px] relative z-[1] bottom-10 mr-[0px] ">
                     Marriott Hotel Kapadokya Nevşehir
                   </p>
