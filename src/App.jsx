@@ -1,3 +1,4 @@
+import React from 'react';
 import "./App.css";
 import logo from "./assets/logo.png";
 import global from "./assets/global.svg";
@@ -39,6 +40,14 @@ import penta from "./assets/penta.png";
 
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
+
+import CounterUp from './CounterUp';
+
+
+
+
+
+
 
 function App() {
   return (
@@ -176,28 +185,8 @@ function App() {
         <div className="section2And2">
           <div className="conteiner">
             <div className="block3 sm:grid sm:grid-cols-1 lg:grid-cols-2 items-center ">
-              <div className="counters grid grid-cols-1 justify-items-center">
-                <div className="counter1 py-[20px] border-gray-50 border-[1px] px-[36px]">
-                  <p className="sm:text-[40px] lg:text-[60px] text-[#E24413]">
-                    +23
-                  </p>
-                  <p className="text-gray-400">Yılların Tecrübesi</p>
-                </div>
-
-                <div className="counter1 py-[20px] border-gray-50 border-[1px] px-[32px]">
-                  <p className="sm:text-[40px] lg:text-[50px] text-[#E24413]">
-                    3 Kıta
-                  </p>
-                  <p className="text-gray-400">15 Ülke</p>
-                </div>
-
-                <div className="counter1 pt-[20px] pb-[60px] border-gray-50 border-[1px] px-[25px]">
-                  <p className="sm:text-[40px] text-[60px] text-[#E24413]">
-                    %80
-                  </p>
-                  <p className="text-gray-400">Uluslararası Projeler</p>
-                </div>
-              </div>
+              <CounterUp />
+              
 
               <div className="img  ">
                 <img
