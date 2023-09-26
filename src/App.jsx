@@ -43,7 +43,7 @@ import "swiper/css/bundle";
 function App() {
   return (
     <div className="top border-[#E24413] border-[5px]">
-      <div className="section1 hidden">
+      <div className="section1 ">
         <div className="conteiner">
           <div className="block1 flex items-center justify-around py-[]">
             <div className="logo py-[10px]">
@@ -127,7 +127,7 @@ function App() {
         </div>
       </div>
 
-      <div className="sectons2 hidden ">
+      <div className="sectons2  ">
         <div className="sec2 sm:pt-[20px] lg:pt-[80px]">
           <div className="conteiner">
             <div className="block2in1">
@@ -214,17 +214,21 @@ function App() {
       <div className="section3 pt-[50px] bg-[#1E1E1E]">
         <div className="conteinerAnother">
           <div className="block3 sm:grid sm:grid-cols-1 lg:grid-cols-2 gap-10">
-            <div className="left ml-[50px] mt-[100px]">
+            <div className="left  lg:ml-[50px] mt-[100px]">
               <div className="img ">
                 <img src={img5} alt="" className="sm:hidden lg:flex" />
               </div>
             </div>
-            <div className="right sm:mt-[40px] lg:mt-[80px]">
-              {/* <div className="img">
-                <img src={img5} alt="" className="sm:hidden lg:flex" />
-              </div> */}
+            <div className="right py-[10px] sm:grid grid-cols-2 lg:block sm:gap-5 sm:mt-[40px] lg:mt-[80px]">
+              <div className="img">
+                <img
+                  src={img5}
+                  alt=""
+                  className="sm:pt-[10px]lg:pt-[0]sm:w-[100%] sm:m-auto lg:hidden lg:m-[0]"
+                />
+              </div>
               <div className="TxtArrBtn">
-                <div className="fText text-[#E24413] sm:text-[24px] lg:text-[36px] font-light pt-[20px]">
+                <div className="fText text-[#E24413] sm:text-[18px] lg:text-[36px] font-light pt-[20px]">
                   <p>
                     KİNZA Yapı
                     <b className="text-[#de9d89] font-medium"> Projeleri</b>
@@ -249,7 +253,7 @@ function App() {
                   </div>
                 </div>
                 <div className="texts">
-                  <p className="text-white text-[30px] font-light py-[5px]">
+                  <p className="text-white sm:text-[18px] md:text-[24px] font-light py-[5px]">
                     Radisson Blu Hotel, <br />
                     <b>Havaalanı Abidjan</b>
                   </p>
@@ -260,15 +264,15 @@ function App() {
                     binanın beton ve MEP işleri hariç <br /> tüm ticari işleri.
                   </p>
                 </div>
-                <div className="btn flex gap-5">
-                  <button className="my-[20px] flex py-[10px] px-[50px] text-white bg-[#E24413]">
+                <div className="btn flex flex-wrap gap-5">
+                  <button className="sm:my-[5px] lg:my-[20px] flex sm:py-[10px] lg:py-[10px] sm:px-[20px] lg:px-[30px] text-white bg-[#E24413]">
                     <p>İncele </p>
                     <div className="strelka">
                       <KeyboardArrowRightIcon sx={{ color: "white" }} />
                     </div>
                   </button>
 
-                  <button className="my-[20px] flex py-[10px] px-[30px] text-white border-[white] border-[1px]">
+                  <button className="sm:my-[5px] lg:my-[20px] flex sm:py-[10px] lg:py-[10px] sm:px-[20px] lg:px-[30px] text-white border-[white] border-[1px]">
                     <p>Tüm Projeler</p>
                     <div className="strelka">
                       <KeyboardArrowRightIcon sx={{ color: "white" }} />
@@ -277,7 +281,25 @@ function App() {
                 </div>
               </div>
 
-              <div className="sliders flex gap-10  pt-[20px]">
+              <div className="sliders pt-[20px]">
+                <div className="imgs sm:hidden lg:flex justify-between gap-2">
+                  <div className="img ">
+                    <img src={img7} alt="" className="" />
+                    <p className="bg-[#1E1E1E] text-[14px]  text-white relative z-[1] bottom-10 mr-[180px] py-[10px]">
+                      Marriott Hotel Kapadokya Nevşehir
+                    </p>
+                  </div>
+                  <div className="img">
+                    <img src={img8um} alt="" className="" />
+                    <p className=" text-[14px] bg-[#1E1E1E] text-[white] py-[10px] relative z-[1] bottom-10 mr-[0px] ">
+                      Marriott Hotel Kapadokya Nevşehir
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="sliders sm:pt-[10px] lg:hidden">
+              <div className="imgs sm:flex sm:justify-center lg:hidden gap-10">
                 <div className="img ">
                   <img src={img7} alt="" className="" />
                   <p className="bg-[#1E1E1E] text-[14px]  text-white relative z-[1] bottom-10 mr-[180px] py-[10px]">
@@ -296,17 +318,17 @@ function App() {
         </div>
       </div>
 
-      <div className="section4 hidden">
+      <div className="section4 ">
         <div className="conteiner">
-          <div className="block4 flex justify-center gap-[10px] ">
-            <div className="LeftRight grid grid-cols-2 ">
-              <div className="left4 py-[50px]">
+          <div className="block4 sm:block lg:flex justify-center gap-[10px] ">
+            <div className="LeftRight sm:grid sm:grid-cols-1 lg:grid-cols-2">
+              <div className="left4 sm:text-center lg:text-left py-[50px]">
                 <div className="top1 text-center py-[20px]">
                   <div className="img flex justify-center">
                     <img src={ahsap} alt="" className="" />
                   </div>
 
-                  <button className="flex m-auto  items-center gap-5 py-[10px] px-[40px] border-[#E24413] border-[1px] my-[20px] ">
+                  <button className="lg:flex lg:m-auto  items-center gap-5 py-[10px] px-[40px] border-[#E24413] border-[1px] my-[20px] ">
                     <div className="browser   ">
                       <img src={browser} alt="" />
                     </div>
@@ -332,8 +354,8 @@ function App() {
               </div>
 
               <div className="right4">
-                <div className="top2  py-[36px]">
-                  <h1 className="flex ml-[30px]  text-[#E24413] text-[24px] py-[10px]">
+                <div className="top2 sm:text-center lg:text-left  py-[36px]">
+                  <h1 className="lg:flex lg:ml-[30px]  text-[#E24413] text-[24px] py-[10px]">
                     AHŞAP
                   </h1>
 
@@ -347,14 +369,14 @@ function App() {
                     ahşap işleri yapmaktayız.
                   </p>
                 </div>
-                <div className="under2 py-[20px] px-[20px]">
+                <div className="under2 flex justify-center py-[20px] px-[20px]">
                   <img src={korfex} alt="" />
                 </div>
               </div>
             </div>
 
-            <div className="underArrow  ml-[150px] text-center py-[250px]">
-              <p className="text-[50px] text-[#E24413] font-light ">
+            <div className=" underArrow  sm:ml-[0] lg:ml-[150px] text-center sm:py-[50px] lg:py-[250px]">
+              <p className="sm:text-[24px] md:text-[36px] lg:text-[50px] text-[#E24413] font-light ">
                 İlerlemenin <br /> Gücü, Şirketler <br />
                 <b>
                   Grubuyla Birn <br /> Adım Önde
@@ -365,9 +387,9 @@ function App() {
         </div>
       </div>
 
-      <div className="section5 hidden">
+      <div className="section5 ">
         <div className="conteiner">
-          <div className="block6 flex justify-around">
+          <div className="block6 flex flex-wrap sm:justify-center gap-5 lg:justify-around">
             <div className="left">
               <p className="text-[48px] text-[#E24413] font-light">
                 Bizden <b>Haberler</b>
@@ -385,10 +407,10 @@ function App() {
           </div>
         </div>
         <div className="block6">
-          <div className="sliders flex gap-14 py-[20px]">
-            <div className="img1 ml-[50px]">
+          <div className="sliders sm:grid sm:grid-cols-1 sm:justify-items-center lg:flex gap-14 py-[20px]">
+            <div className="img1 sm:px-[10px] sm:ml-[0] lg:px-[0] lg:ml-[50px]">
               <img src={img88} alt="" />
-              <div className="flex items-center justify-center gap-5 relative z-[3] bottom-[100px] right-10 text-[#333333] bg-[#F1F1F1]  border-white border-[10px] hover:bg-[#E24413] hover:text-white   ">
+              <div className="flex items-center justify-center gap-5 lg:relative z-[3] bottom-[100px] right-10 text-[#333333] bg-[#F1F1F1]  border-white border-[10px] hover:bg-[#E24413] hover:text-white   ">
                 <div className="txt">
                   <p className="text-[19px]  font-light">
                     Mimari Harikalar: Dünyanın En <br /> Etkileyici İnşaat
@@ -407,7 +429,7 @@ function App() {
             </div>
             <div className="img2">
               <img src={img9} alt="" />
-              <div className="flex items-center justify-center gap-5 relative z-[3] bottom-[100px] right-10 text-[#333333] bg-[#F1F1F1]  border-white border-[10px] hover:bg-[#E24413] hover:text-white   ">
+              <div className="flex items-center justify-center gap-5 lg:relative z-[3] bottom-[100px] right-10 text-[#333333] bg-[#F1F1F1]  border-white border-[10px] hover:bg-[#E24413] hover:text-white   ">
                 <div className="txt">
                   <p className="text-[19px]  font-light">
                     Mimari Harikalar: Dünyanın En <br /> Etkileyici İnşaat
@@ -426,7 +448,7 @@ function App() {
             </div>
             <div className="img3">
               <img src={img10} alt="" />
-              <div className="flex items-center justify-center gap-5 relative z-[3] bottom-[100px] right-10 py-[30px]   text-[#333333] bg-[#F1F1F1]  border-white border-[10px] hover:bg-[#E24413] hover:text-white   ">
+              <div className="flex items-center justify-center gap-5 lg:relative z-[3] bottom-[100px] right-10 py-[30px]   text-[#333333] bg-[#F1F1F1]  border-white border-[10px] hover:bg-[#E24413] hover:text-white   ">
                 <div className="txt">
                   <p className="text-[19px]  font-light">
                     Mimari Harikalar: Dünyanın En <br /> Etkileyici İnşaat
@@ -439,9 +461,9 @@ function App() {
         </div>
       </div>
 
-      <div className="section6 hidden bg-[#1E1E1E]">
-        <div className="block7 flex justify-around py-[40px]">
-          <div className="isoTexts flex gap-10">
+      <div className="section6  bg-[#1E1E1E]">
+        <div className="block7 sm:grid sm:grid-cols-1 lg:flex justify-around py-[40px]">
+          <div className="isoTexts grid grid-cols-3 gap-10">
             <div className="isoText py-[20px] px-[20px] border-[1px] border-[#ffffff48] hover:bg-[#E24413]">
               <div className="img">
                 <img src={iso} alt="" />
@@ -482,8 +504,8 @@ function App() {
         </div>
       </div>
 
-      <div className="footer hidden  bg-[#1B1B1B] py-[50px]">
-        <div className="blocks flex justify-center gap-10  ">
+      <div className="footer  bg-[#1B1B1B] py-[50px]">
+        <div className="blocks flex flex-wrap justify-center gap-10  ">
           <div className="blockCha1">
             <ul className="text-white ">
               <p className="text-[22px] hover:text-[#E24413]">Kurumsal</p>
@@ -575,7 +597,7 @@ function App() {
           </div>
         </div>
         <hr className="w-[70%] m-auto text-[red] bg-black" />
-        <div className="theAnd flex justify-center gap-10 py-[50px]">
+        <div className="theAnd flex flex-wrap justify-center gap-10 py-[50px]">
           <div className="blockCha10 hover:border-[1px] hover:border-[#E24413] px-[20px]">
             <p className="text-[#E24413] text-[22px] font-medium py-[10px]">
               Merkez Ofis
@@ -725,7 +747,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="theAnd2 hidden bg-[#1E1E1E] py-[10px] flex justify-around items-center text-[#1E1E1E]">
+      <div className="theAnd2 bg-[#1E1E1E] py-[10px] flex justify-around items-center text-[#1E1E1E]">
         <div className="porag1">
           <p className="text-white text-[17px]">
             © 2023 Kinzayapi.com | Tüm Hakları Saklıdır.
