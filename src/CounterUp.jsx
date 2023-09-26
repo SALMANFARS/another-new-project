@@ -13,7 +13,7 @@ const CounterUp = () => {
       <div>
         <div className="counters grid grid-cols-1 justify-items-center">
           <div className="counter1 py-[20px] border-gray-50 border-[1px] px-[36px]">
-            <p className="sm:text-[40px] lg:text-[60px] text-[#E24413]">
+            <p className="sm:text-[40px] lg:text-[60px] text-[#E24413] font-light">
               +
               {CounterOn && (
                 <CountUp start={0} end={23} duration={2} delay={0} />
@@ -23,20 +23,20 @@ const CounterUp = () => {
           </div>
 
           <div className="counter1 py-[20px] border-gray-50 border-[1px] px-[32px]">
-            <p className="sm:text-[40px] lg:text-[50px] text-[#E24413]">
+            <p className="sm:text-[40px] lg:text-[50px] text-[#E24413] font-light">
               {CounterOn && (
                 <CountUp start={0} end={3} duration={2} delay={0} />
               )}
-              Kıta
+              &nbsp;Kıta
             </p>
             <p className="text-gray-400">15 Ülke</p>
           </div>
 
-          <div className="counter1 pt-[20px] pb-[60px] border-gray-50 border-[1px] px-[25px]">
-            <p className="sm:text-[40px] text-[60px] text-[#E24413]">
+          <div className="counter1 ml-[20px] pt-[20px] pb-[60px] border-gray-50 border-[1px] px-[28px]">
+            <p className="sm:text-[40px] lg:text-[58px] text-[#E24413] font-light">
               %
               {CounterOn && (
-                <CountUp start={0} end={80} duration={2} delay={0} />
+                <CountUp start={0} end={80} duration={3} delay={0} />
               )}
             </p>
             <p className="text-gray-400">Uluslararası Projeler</p>

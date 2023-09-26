@@ -106,21 +106,21 @@ function App() {
                 </div>
               </div>
               <div className="txts sm:text-[20px] md:text-[40px]">
-                <h1>
+                <h1 className="font-light">
                   Geleceğin <br />
-                  İnşaası,
+                  İnşaası,&nbsp;
                   <span className="font-bold">
                     Çevre <br /> Dostu Adımlar.
                   </span>
                 </h1>
 
-                <p className="sm:text-[14px] md:text-[18px] py-[20px]">
+                <p className="sm:text-[14px] md:text-[12px] py-[20px] text-[#333333]">
                   Sürdürülebilirlik ilkesini benimseyerek, çevre dostu <br />
                   inşaat adımlarıyla geleceği inşa ediyoruz.
                 </p>
               </div>
-              <div className="btn py-[10px]">
-                <button className=" flex items-center text-white sm:py-[5px] sm:px-[5px] md:py-[10px] md:px-[30px] bg-[#E24413]">
+              <div className="btn py-[20px]">
+                <button className=" flex items-center text-white sm:py-[5px] sm:px-[5px] md:py-[8px] md:px-[20px] bg-[#E24413]">
                   <p className="sm:text-xs md:text-[15px]">Projelerimiz</p>
                   <div className="strelka">
                     <KeyboardArrowRightIcon />
@@ -146,11 +146,11 @@ function App() {
                 </div>
 
                 <div className="txt">
-                  <p className="bg-white flex sm:justify-center lg:justify-normal lg:relative z-[1] right-[180px] sm:text-[28px] md:text-[40px] text-[#E24413] px-[50px] py-[10px]">
+                  <p className="bg-white flex sm:justify-center lg:justify-normal lg:relative z-[1] right-[180px] sm:text-[28px] md:text-[40px] text-[#E24413] px-[50px] pt-[10px] font-light">
                     Geçmişten Geleceğe İnşa Gücü:
                   </p>
-                  <div className="txts sm:text-center md:text-left  md:ml-[80px]">
-                    <p className="flex sm:justify-center lg:justify-normal  sm:text-[36px] md:text-[38px]  font-bold text-[#E24413]">
+                  <div className="txts sm:text-center md:text-left  md:ml-[70px]">
+                    <p className="flex sm:justify-center lg:justify-normal  sm:text-[36px] md:text-[38px]  font-bold text-[#E24413] ">
                       1996'dan Beri KİNZA
                     </p>
 
@@ -186,7 +186,6 @@ function App() {
           <div className="conteiner">
             <div className="block3 sm:grid sm:grid-cols-1 lg:grid-cols-2 items-center ">
               <CounterUp />
-              
 
               <div className="img  ">
                 <img
@@ -200,15 +199,15 @@ function App() {
         </div>
       </div>
 
-      <div className="section3 pt-[50px] bg-[#1E1E1E]">
+      <div className="section3 pt-[0px] bg-[#1E1E1E]">
         <div className="conteinerAnother">
           <div className="block3 sm:grid sm:grid-cols-1 lg:grid-cols-2 gap-10">
-            <div className="left  lg:ml-[50px] mt-[100px]">
+            <div className="left  lg:ml-[50px] mt-[50px]">
               <div className="img ">
                 <img src={img5} alt="" className="sm:hidden lg:flex" />
               </div>
             </div>
-            <div className="right py-[10px] sm:grid grid-cols-2 lg:block sm:gap-5 sm:mt-[40px] lg:mt-[80px]">
+            <div className="right py-[10px] sm:grid grid-cols-2 lg:block sm:gap-5 sm:mt-[40px] lg:mt-[20px]">
               <div className="img">
                 <img
                   src={img5}
@@ -217,10 +216,10 @@ function App() {
                 />
               </div>
               <div className="TxtArrBtn">
-                <div className="fText text-[#E24413] sm:text-[18px] lg:text-[36px] font-light pt-[20px]">
+                <div className=" text-[#E24413] sm:text-[18px] lg:text-[40px] font-light pt-[20px]">
                   <p>
                     KİNZA Yapı
-                    <b className="text-[#de9d89] font-medium"> Projeleri</b>
+                    <b className="text-gradient font-medium "> Projeleri</b>
                   </p>
                 </div>
                 <div className="arrows flex gap-5 py-[5px]">
@@ -416,7 +415,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="img2">
+            <div className="img2 sm:px-[10px]">
               <img src={img9} alt="" />
               <div className="flex items-center justify-center gap-5 lg:relative z-[3] bottom-[100px] right-10 text-[#333333] bg-[#F1F1F1]  border-white border-[10px] hover:bg-[#E24413] hover:text-white   ">
                 <div className="txt">
